@@ -73,6 +73,7 @@ img {
 }
 
 .section-title {
+  text-align: center;
   font-size: 36px;
   line-height: 1.11;
 }
@@ -176,7 +177,7 @@ img {
 
 .main-nav .list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .nav-link {
@@ -200,7 +201,7 @@ img {
 
 .contacts .list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .contacts-link {
@@ -241,7 +242,7 @@ img {
 }
 
 .hero-section .page-title {
-  width: 496px;
+  max-width: 496px;
   margin: 0 auto 48px;
 }
 
@@ -252,12 +253,12 @@ img {
 
 /* ========== Features Section ========== */
 .features-section {
-  padding: 120px;
+  padding: 120px 0;
 }
 
 .features-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .features-item {
@@ -273,16 +274,61 @@ img {
 }
 
 
+/* ========== What Are We Doing Section ========== */
+.products-section {
+  padding-bottom: 120px;
+}
+
+.products-section-title {
+  margin-bottom: 72px;
+}
+
+.products-list {
+  display: flex;
+  gap: 24px;
+}
+
+.products-item {
+  flex-basis: calc((100% - 24px * 2) / 3);
+}
+
+
 /* ========== Our Team Section ========== */
 .our-team-section {
+  padding: 120px 0;
   background-color: var(--color-light);
 }
 
-.our-team-section .list-item {
+.our-team-section-title {
+  margin-bottom: 72px;
+}
+
+.our-team-section-list {
+  display: flex;
+  gap: 24px;
+}
+
+.our-team-section-list-item {
+  flex-basis: calc((100% - 24px * 3) / 4);
+  border-radius: 0 0 4px 4px;
   background-color: var(--color-white);
 }
 
-.position {
+.our-team-section-image {
+  margin-bottom: 32px;
+}
+
+.our-team-section .text-wrapper {
+  padding-bottom: 32px;
+}
+
+.our-team-section-name {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.our-team-section-position {
+  text-align: center;
   letter-spacing: 0.02em;
 }
 
